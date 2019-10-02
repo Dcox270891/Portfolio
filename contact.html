@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,26 +36,28 @@
         <div>
             <h1 class="heading heading-text">Contact </h1>
         </div>
-        <div class="form main-text">
-            <div class="input">
-                Name
+        <legend class="main-text">Conact the creator:
+            <form class="form main-text" action="mailto:d.cox.270891@gmail.com?subject=contact form" method="post" enctype="text/plain">
+                First name: 
                 <br>
-                <Input></Input>  
-            </div>
-            <div class="input">
-                Email
+                <input type="text" name="firstname" placeholder="First name" autofocus>
                 <br>
-                <Input></Input>
-            </div>
-            <div class="input">
-                Message
+                Last name: 
                 <br>
-                <Input></Input>
-            </div>
-            <div class="button submit">
-                Submit
-            </div>
-        </div>
+                <input type="text" name="lastname" placeholder="Last name">
+                <br>
+                Email: 
+                <br>
+                <input type="email" name="email" placeholder="Bob@gmail.co.uk">
+                <br>
+                Message: 
+                <br>
+               <textarea name="message" rows="12" cols="50" placeholder="Write your massage to the creator here..."></textarea>
+                <br>
+                <br>
+                <input class="button" type="submit" value="Send"/>
+            </form>
+        </legend>
     </div>
     <footer class="container bottom-bar">
         copyright 

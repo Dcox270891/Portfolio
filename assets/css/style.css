@@ -55,10 +55,11 @@ h1{
 
 .right-of-screen{
     display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 10px;
     position: relative;
-    min-width: 250px;
-    max-width: 25%;
+    min-width: 0 auto;
+    max-width: 0 auto;
     right: 0;
     height: auto;
     top: 16px;
@@ -135,11 +136,17 @@ a:active {
 }
 
 
-.button{
+button{
     background-color:#4aaaa5;
     color: #ffffff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: 100%;
+    text-size-adjust: 150%;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color: #4aaaa5;
 }

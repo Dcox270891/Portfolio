@@ -19,9 +19,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .gallery{
+    margin: 0 auto;
     flex-flow: row wrap;
     display: flex;
     position: relative;
     max-width: 100%;
-    justify-content: space-around center;
+    justify-content: space-around;
 }
