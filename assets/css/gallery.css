@@ -1,0 +1,27 @@
+.gallery-photo{
+    flex:1;
+    position: relative;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+}
+
+.gallery-collar{
+    display: 100%;
+    position:absolute;
+    right: 25px;
+    left: 25px;
+    bottom: 35px;
+    width:200px;
+    background-color:#4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gallery{
+    flex-flow: row wrap;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    justify-content: space-around center;
+}
