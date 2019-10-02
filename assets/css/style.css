@@ -24,6 +24,9 @@ body{
 h1{
     color: #ffffff;
     background: #4aaaa5;
+    position: relative;
+    top: 22px;
+    padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;    
 }
 
@@ -57,10 +60,17 @@ h1{
     min-width: 250px;
     max-width: 25%;
     right: 0;
+    height: auto;
+    top: 16px;
 }
 
-li{
+ul{
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
+    width:100%;
+    justify-content: flex-end;
+    height:auto;
 }
 
 .bottom-bar {
@@ -79,11 +89,12 @@ li{
 
 .top-link{
     justify-content: flex-end;
-    flex-direction: row;
+    display: inline-block;
     flex: 1;
-    width: 75px;
+    width: 100%;
     position: relative;
     text-decoration: none;
+    text-align: justify;
 }
 
 a{
@@ -130,4 +141,5 @@ a:active {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    display: 100%;
 }
