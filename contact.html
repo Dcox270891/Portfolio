@@ -9,56 +9,63 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="container top-bar border-under">     
-        <div class="container">
-            <div class="buffer">
-            </div>
-            <div class="heading heading-text">
+    <header class="container">     
+        <div class="top-bar border-under">
+            <div class="main-heading heading-text">
                 <h1>Daniel Cox</h1>
             </div>
+            <nav class="nav">
+                <ul>
+                    <li class="top-link main-text">
+                        <a href="index.html">About</a>
+                    </li>
+                    <li class="top-link main-text" >
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="top-link main-text">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul> 
+            </nav>
         </div>
-        <nav class="container right-of-screen">
-            <ul>
-                <li class="top-link main-text">
-                    <a href="index.html">About</a>
-                </li>
-                <li class="top-link main-text" >
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="top-link main-text">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul> 
-        </nav>
     </header>
 
     <div class="main-body">
         <div>
-            <h1 class="heading heading-text">Contact </h1>
+            <h1 class="heading heading-text">Contact us</h1>
         </div>
-        <legend class="main-text">Conact the creator:
-            <form class="form main-text" action="mailto:d.cox.270891@gmail.com?subject=contact form" method="post" enctype="text/plain">
-                First name: 
-                <br>
-                <input type="text" name="firstname" placeholder="First name" autofocus>
-                <br>
-                Last name: 
-                <br>
-                <input type="text" name="lastname" placeholder="Last name">
-                <br>
-                Email: 
-                <br>
-                <input type="email" name="email" placeholder="Bob@gmail.co.uk">
-                <br>
-                Message: 
-                <br>
-               <textarea name="message" rows="12" cols="50" placeholder="Write your massage to the creator here..."></textarea>
-                <br>
-                <br>
-                <input class="button" type="submit" value="Send"/>
-            </form>
-        </legend>
+            
+        <form class="form main-text" action="mailto:d.cox.270891@gmail.com?subject=contact form" method="post" enctype="text/plain">
+            <div class="group"v>
+                <label class="label" for="first-name">
+                    First name: 
+                </label>
+                <input id="first-name" class="input" type="text" name="first-name" placeholder="First name" autofocus>
+            </div>
+            <div class="group">
+                <label class="label" for="last-name">
+                    Last name: 
+                </label>
+                <input id="last-name" class="input" type="text" name="last-name" placeholder="Last name">
+            </div>
+            <div class="group">
+                <label class="label" for="email">
+                    Email:
+                </label> 
+                <input id="email" class="input" type="email" name="email" placeholder="Bob@gmail.co.uk">
+            </div>
+            <div class="group">
+                <label class="label" for="message">
+                    Message: 
+                </label>
+                <textarea id="massage" class="input message" name="message" >
+                    Write your message here...
+                </textarea>
+            </div>
+            <input class="button" type="submit" value="Send"/>
+        </form>
     </div>
+
     <footer class="container bottom-bar">
         copyright 
     </footer>
