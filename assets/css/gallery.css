@@ -1,9 +1,10 @@
 .gallery-photo{
     flex:1;
     position: relative;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     padding: 25px;
-    width: 100%;
+    max-width: 200px;
 }
 
 .gallery-collar{
